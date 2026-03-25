@@ -20,18 +20,6 @@ if (numeros[1] > numeros[2]) {
 
 
 
-
-
-
-
-
-console.log("Professor venha logo, estou com fome e com sono");
-
-
-
-
-
-
 let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 number [4] = 67
