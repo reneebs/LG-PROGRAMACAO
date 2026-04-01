@@ -1,6 +1,9 @@
 const prompt = require('prompt-sync')();
+// Criar um vetor vazio 
 
-// Criar um vetor vazio para armazenar os nomes
+// Gravar esse codigo --> require('prompt-sync')();
+
+//Armazenar os nomes em um vetor
 let nomes = [];
 
 // usar um loop para pedir 5 nomes e exibir no mesmo for
