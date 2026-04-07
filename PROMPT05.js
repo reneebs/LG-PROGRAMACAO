@@ -5,4 +5,4 @@ const prompt = require('prompt-sync')
 
 let opcao = '';
 
-while
+while jnsjbcnon xl,a nxjobn ,
