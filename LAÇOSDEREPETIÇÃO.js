@@ -11,7 +11,8 @@ for (let i = 0; i < 7; i++)
         if (idade>=18)
          {    
              maiores++;
-         }
+
+        }
 }
 
 console.log("Pessoas maiores de idades: " + maiores);
