@@ -1,4 +1,4 @@
-// ESCREVER UM PROGRAMA QUE LEIA 10 VALORES INTEIROS E AO FINAL EXIBA A SOMA DOS NUMEROS POSITIVOS
+//  Escrever um programa que leia 10valores inteiros e ao final exiba a soma dos números positivos. 
 let soma = 0;
 const prompt = require("prompt-sync")();
 
