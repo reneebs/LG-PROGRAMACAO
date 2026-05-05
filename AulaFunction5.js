@@ -1,40 +1,9 @@
-// PROGRAMA PARA CALCULAR SALARIO COM BONUS
-// USA DUAS FUNCOES: UMA PARA SALARIO BRUTO E OUTRA PARA ACRESCENTAR BONUS
 
-const prompt = require('prompt-sync')();
 
-// FUNCAO QUE CALCULA O SALARIO BRUTO
-// RECEBE HORAS TRABALHADAS E VALOR DA HORA
-function calcularSalarioBruto(horas, valorHora) {
-    let salarioBruto = horas * valorHora;
-    return salarioBruto;
-}
+console.log("\n---------Menu-------------");
+console.log('\nvoce e o 00');
 
-// FUNCAO QUE ACRESCENTA BONUS SE SALARIO FOR MENOR QUE 2000
-// RECEBE O SALARIO BRUTO E RETORNA O VALOR FINAL
-function calcularSalarioFinal(salarioBruto) {
-    if (salarioBruto < 2000) {
-        let bonus = 200;
-        let salarioFinal = salarioBruto + bonus;
-        return salarioFinal;
-    } else {
-        return salarioBruto;
-    }
-}
 
-// PROGRAMA PRINCIPAL
-// PERGUNTA OS DADOS AO USUARIO
-let nome = prompt("Digite o nome do funcionario: ");
-let horas = Number(prompt("Digite as horas trabalhadas: "));
-let valorHora = Number(prompt("Digite o valor da hora: "));
+const numeros = [10, 20, 30, 40, 50];
 
-// CHAMA A FUNCAO PARA CALCULAR SALARIO BRUTO
-let salarioBruto = calcularSalarioBruto(horas, valorHora);
-
-// CHAMA A FUNCAO PARA CALCULAR SALARIO FINAL (COM BONUS SE TIVER)
-let salarioFinal = calcularSalarioFinal(salarioBruto);
-
-// MOSTRA OS RESULTADOS
-console.log("Nome:", nome);
-console.log("Salario bruto:", salarioBruto);
-console.log("Salario final:", salarioFinal);
+for(let i=0;i)

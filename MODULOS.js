@@ -4,7 +4,8 @@ let cadastro = [];
 let nome = 0;
 
 
-while (option !=='2') {
+while (option !=
+    ='2') {
     console.log('1. Cadastro.');
     console.log('2. Sair.\n');
     option = prompt('Digite a opção:'); 
