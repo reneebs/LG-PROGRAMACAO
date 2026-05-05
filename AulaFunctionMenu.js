@@ -1,8 +1,75 @@
+const prompt = require('prompt-sync')();
+
+// Soma todos números do vetor
+function somaVetor(vetor) {
+    let soma = 0;
+    for (let i = 0; i < vetor.length; i++) {
+        soma = soma + vetor[i];  // soma cada posição
+    }
+    return soma;
+}
+
+// Multiplica todos números do vetor (produto)
+function multiplicaVetor(vetor) {
+    let produto = 1;
+    for (let i = 0; i < vetor.length; i++) {
+        produto = produto * vetor[i];  // multiplica cada posição
+    }
+    return produto;
+}
+
+// Multiplica cada número do vetor por 5
+function multiplicarPorCinco(vetor) {
+    for (let i = 0; i < vetor.length; i++) {
+        vetor[i] = vetor[i] * 5;  // cada posição * 5
+    }
+}
+
+// Muda um elemento do vetor pelo índice
+function mudarElemento(vetor) {
+    let indice = Number(prompt('Índice (0-4): '));
+    if (indice >= 0 && indice < 5) {
+        let novoValor = Number(prompt('Novo número: '));
+        vetor[indice] = novoValor;  // substitui posição
+        console.log(`Posição ${indice} alterada para ${novoValor}`);
+    } else {
+        console.log('Índice inválido!');
+    }
+}
+
+// Ordena vetor crescente - Bubble Sort simples
+function ordenarVetor(vetor) {
+    // faz 4 voltas comparando posições vizinhas
+    for (let volta = 0; volta < 4; volta++) {
+        for (let pos = 0; pos < 4; pos++) {
+            if (vetor[pos] > vetor[pos + 1]) {  // se errado troca
+                let aux = vetor[pos];
+                vetor[pos] = vetor[pos + 1];
+                vetor[pos + 1] = aux;
+            }
+        }
+    }
+}
+
+// Inverte ordem dos números no vetor
+function inverterVetor(vetor) {
+    vetor.reverse();  // função nativa inverte tudo
+}
+
+// Mostra todos números do vetor com posição
+function mostrarVetor(vetor) {
+    console.log('Vetor:');
+    for (let i = 0; i < vetor.length; i++) {
+        console.log('Posição ' + i + ': ' + vetor[i]);
+    }
+}
+
 let vetor = [];
 
+// Pede 5 números para o vetor
 console.log("Preencha o vetor com 5 números inteiros:");
 for (let i = 0; i < 5; i++) {
-    vetor[i] = Number(prompt(`Digite o ${i + 1}º número: `));
+    vetor[i] = Number(prompt('Digite o ' + (i + 1) + 'º número: '));
 }
 
 // ===== Menu =====
@@ -56,27 +123,4 @@ do {
 } while (opcao !== 0);
 
 
-//escreva um programa q peca para o usuareio preencher um fvetor de numero inteiros de 5 posicoes elabore funcoes que recebam esse vetor como argumento e facam: cada
 
-//somavetor recebe o vetor e retorna a soma de seus elementos 
-
-//multiplacavetor: cakcula o produto dos elementos do vetor.
-
-//multiplicarPorCinco: multiplica cada elemento do vetor por 5
-
-//mudarElemento: nossa funcao o usuario dira o indice do vetor que deseja alterar e o numero para substituir na posicao desejada. 
-
-//ordenaVetor: ordena o vetor em ordem crescente usando um algoritmo de ordenacao simples (bubble sort)
-
-//inverterVetor: inverte os elementos do vetor
-
-//mostrarvetor. exibe os elementos do vetor na tela
-
-//o menu permite ao usuario escolher qual funcao desaja executar
-//o programa continua ate que o usuario escolha a opcao de sair (0)
-//voce podera utilizar funcoes nativas do javascript para as logicas das funcoes
-
-//exemplo de entrada incial do programa (menu);
-escolha
-
-//'1 soma do vetor 2. produto do vetor 3. multiplicar todos os elementos por 5 4.Mudar elemento do vetor etc...

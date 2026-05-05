@@ -1,9 +1,8 @@
-# TODO for MODULO.js Simplification and Formatting - COMPLETE
+# TODO: Programa Vetor com Menu
 
-- [x] Step 1: Create TODO.md (done)
-- [x] Step 2: Update MODULO.js with organized braces, indentation, and fixes
-- [x] Step 3: Test with `node MODULO.js` (runs menu successfully)
-- [x] Step 4: Update TODO.md with completion status
-- [x] Step 5: Task complete
-
-All steps done. MODULO.js is now simpler, well-formatted with organized braces.
+## Passos:
+1. [x] Criar TODO.md (feito)
+2. [x] Ler AulaFunctionMenu.js completa
+3. [x] Editar AulaFunctionMenu.js: adicionar as 7 funções
+4. [x] Testar menu
+5. [x] Completar tarefa
