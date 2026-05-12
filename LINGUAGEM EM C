@@ -1,3 +1,5 @@
+//1
+
 #include <stdio.h>
 
 int main()
@@ -6,19 +8,79 @@ int main()
     int idade;
     float altura;
     
-    printf("Digite o nome: ");
+    printf("digite o nome: ");
     scanf("%s%" , &nome);
     
-    printf("Digite o idade: ");
+    printf("digite o idade: ");
     scanf("%d%" , &idade);
     
-    printf("Digite sua altura: ");
+    printf("digite sua altura: ");
     scanf("%f%" , &altura);
     
-    printf("Seu nome é: %s\n" , nome);
-    printf("Sua idade: %d\n" , idade);
-    printf("Sua altura é: %f\n" , altura);
+    printf("seu nome é: %s\n" , nome);
+    printf("sua idade: %d\n" , idade);
+    printf("sua altura é: %f\n" , altura);
    
     return 0;
 
+}
+
+
+// 2
+
+#include <stdio.h>
+
+int main() {
+    // números pares de 1 a 20
+    for (int i = 1; i <= 20; i++) {
+        if (i % 2 == 0) {
+            printf("%d\n", i);
+        }
+    }
+
+    // tabuada
+    int numero;
+    printf("digite um número para a tabuada: ");
+    scanf("%d", &numero);
+
+    for (int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", numero, i, numero * i);
+    }
+    
+    return 0;
+}
+
+
+//3
+
+
+#include <stdio.h>
+
+int main() {
+    int opcao, n;
+
+    while (1) {
+        printf("1 - dobro\n");
+        printf("2 - quadrado\n");
+        printf("3 - sair\n");
+        printf("escolha uma opção: ");
+        scanf("%d", &opcao);
+
+        if (opcao == 1) {
+            printf("digite um número: ");
+            scanf("%d", &n);
+            printf("dobro: %d\n", n * 2);
+
+        } else if (opcao == 2) {
+            printf("digite um número: ");
+            scanf("%d", &n);
+            printf("quadrado: %d\n", n * n);
+
+        } else if (opcao == 3) {
+            printf("saindo...\n");
+            break;
+        }
+    }
+
+    return 0;
 }
