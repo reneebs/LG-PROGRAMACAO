@@ -1,0 +1,24 @@
+
+// 2
+
+#include <stdio.h>
+
+int main() {
+    // números pares de 1 a 20
+    for (int i = 1; i <= 20; i++) {
+        if (i % 2 == 0) {
+            printf("%d\n", i);
+        }
+    }
+
+    // tabuada
+    int numero;
+    printf("digite um número para a tabuada: ");
+    scanf("%d", &numero);
+
+    for (int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", numero, i, numero * i);
+    }
+    
+    return 0;
+}
