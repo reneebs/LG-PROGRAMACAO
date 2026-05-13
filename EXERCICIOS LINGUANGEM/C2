@@ -1,0 +1,34 @@
+
+//3
+
+
+#include <stdio.h>
+
+int main() {
+    int opcao, n;
+
+    while (1) {
+        printf("1 - dobro\n");
+        printf("2 - quadrado\n");
+        printf("3 - sair\n");
+        printf("escolha uma opção: ");
+        scanf("%d", &opcao);
+
+        if (opcao == 1) {
+            printf("digite um número: ");
+            scanf("%d", &n);
+            printf("dobro: %d\n", n * 2);
+
+        } else if (opcao == 2) {
+            printf("digite um número: ");
+            scanf("%d", &n);
+            printf("quadrado: %d\n", n * n);
+
+        } else if (opcao == 3) {
+            printf("saindo...\n");
+            break;
+        }
+    }
+
+    return 0;
+}
