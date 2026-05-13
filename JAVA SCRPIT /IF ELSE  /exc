@@ -1,0 +1,38 @@
+// Declaração de duas constantes numéricas utilizadas nas operações
+const num1 = (5541);
+const num2 = (5245154);
+
+// Variável que define qual operação matemática será executada
+let operacao = "/";
+
+// Estrutura condicional para verificar qual operação foi escolhida
+
+// Caso a operação seja soma
+if(operacao == "+"){
+    soma = num1 + num2; // Realiza a soma entre os dois números
+    console.log("O resultado é", soma); // Exibe o resultado da soma
+
+// Caso a operação seja subtração
+}else if(operacao == "-"){
+    subtracao = num1 - num2; // Realiza a subtração
+    console.log("O resultado é",subtracao); // Exibe o resultado
+
+// Caso a operação seja multiplicação
+}else if(operacao == "*"){
+    multiplicacao = num1 * num2; // Realiza a multiplicação
+    console.log("O resultado é",multiplicacao); // Exibe o resultado
+
+// Caso a operação seja divisão
+}else if(operacao == "/"){
+
+    // Verificação para evitar divisão por zero
+    if(num2 == 0);
+
+    // Mensagem exibida em caso de operação inválida
+    console.log("Operação invalida.O segundo numero deve ser que 0");
+
+// Caso nenhuma das operações anteriores seja atendida
+}else{
+    divisao = num1 / num2 // Realiza a divisão
+    console.log("O resultado da divisão é", divisao); // Exibe o resultado
+}
