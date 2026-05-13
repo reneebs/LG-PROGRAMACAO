@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main() {
+    float notas[3][3];
+    int i, j;
+
+    //Leitura
+    printf(" digite as notas \n\n");
+
+    for (i = 0; i < 3; i++) {
+        printf("aluno %d:\n", i + 1);
+        for (j = 0; j < 3; j++) {
+            printf("  disciplina %d:", j + 1);
+            scanf("%f", &notas[i][j]);
+        }
+        printf("\n");
+    }
+
+    //Matriz
+    printf(" notas dos Alunos \n");
+    printf("         discipli1  discipli2  discipli3\n");
+
+    for (i = 0; i < 3; i++) {
+        printf("aluno %d: ", i + 1);
+        for (j = 0; j < 3; j++) {
+            printf(" %.1f  ", notas[i][j]);
+        }
+        printf("\n");
+    }
+
+    //Calcule médias...
+    printf("\n média e situação \n");
+
+    for (i = 0; i < 3; i++) {
+        float soma = 0;
+
+        for (j = 0; j < 3; j++) {
+            soma = soma + notas[i][j];
+        }
+
+        float media = soma / 3;
+
+        printf("aluno %d -- media %.1f -- ", i + 1, media);
+
+        if (media >= 6) {
+            printf("aprovadooo!\n");
+        } else {
+            printf("reprovadoo!\n");
+        }
+    }
+
+    //Encontre a maior nota...
+    float maior = notas[0][0]; // começa assumindo que a primeira é a maior
+
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            if (notas[i][j] > maior) {
+                maior = notas[i][j];
+            }
+        }
+    }
+
+    printf("\nmaior nota de toda a turma:%2.f" , maior);
+
+    return 0;
+}
