@@ -4,8 +4,6 @@
 
 #include <stdio.h>
 
-#include <stdio.h>
-
 int main()
 {
     int n1, option = 0;
@@ -25,16 +23,24 @@ int main()
             scanf("%d", &n1);
             r = n1 * 2;
             printf("O dobro do seu numero é: %d\n", r);
+        
+            
         }else if(option == 2) {
             printf("Digite seu numero: ");
             scanf("%d", &n1);
             r = n1 * n1;
             printf("O quadrado é: %d\n", r);
-        }else if(option == 3) {
-            break;
+        
+            
+        }else if (option == 3) {
+            printf("Saindo..\n");
+        
+            
         }else {
             printf("Opcao invalida\n");
+            break;        
         }
+        
     }
 
     return 0;
